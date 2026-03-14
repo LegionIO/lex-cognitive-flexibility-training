@@ -71,7 +71,7 @@ RSpec.describe Legion::Extensions::CognitiveFlexibilityTraining::Helpers::Switch
     it 'includes all key fields' do
       h = trial.to_h
       expect(h).to include(:id, :from_task_id, :to_task_id, :switch_cost, :accuracy,
-                            :costly, :successful, :switch_cost_label, :created_at)
+                           :costly, :successful, :switch_cost_label, :created_at)
     end
   end
 end

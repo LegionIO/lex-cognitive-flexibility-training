@@ -111,15 +111,15 @@ module Legion
 
           def training_report
             {
-              task_count:       @tasks.size,
-              trial_count:      @trials.size,
-              session_count:    @sessions.size,
-              average_switch_cost: average_switch_cost,
-              flexibility_score:   flexibility_score,
-              improvement_rate:    improvement_rate,
-              flexibility_label:   Constants.label_for(flexibility_score, Constants::FLEXIBILITY_LABELS),
-              progress_label:      Constants.label_for(1.0 - average_switch_cost, Constants::PROGRESS_LABELS),
-              costly_trial_ratio:  costly_ratio,
+              task_count:             @tasks.size,
+              trial_count:            @trials.size,
+              session_count:          @sessions.size,
+              average_switch_cost:    average_switch_cost,
+              flexibility_score:      flexibility_score,
+              improvement_rate:       improvement_rate,
+              flexibility_label:      Constants.label_for(flexibility_score, Constants::FLEXIBILITY_LABELS),
+              progress_label:         Constants.label_for(1.0 - average_switch_cost, Constants::PROGRESS_LABELS),
+              costly_trial_ratio:     costly_ratio,
               successful_trial_ratio: success_ratio
             }
           end

@@ -17,27 +17,27 @@ module Legion
           TASK_DOMAINS      = %i[linguistic spatial numerical logical emotional social creative].freeze
 
           SWITCH_COST_LABELS = {
-            (0.8..)      => :severe,
-            (0.6...0.8)  => :high,
-            (0.4...0.6)  => :moderate,
-            (0.2...0.4)  => :low,
-            (..0.2)      => :minimal
+            (0.8..)     => :severe,
+            (0.6...0.8) => :high,
+            (0.4...0.6) => :moderate,
+            (0.2...0.4) => :low,
+            (..0.2)     => :minimal
           }.freeze
 
           FLEXIBILITY_LABELS = {
-            (0.8..)      => :highly_flexible,
-            (0.6...0.8)  => :flexible,
-            (0.4...0.6)  => :moderate,
-            (0.2...0.4)  => :rigid,
-            (..0.2)      => :inflexible
+            (0.8..)     => :highly_flexible,
+            (0.6...0.8) => :flexible,
+            (0.4...0.6) => :moderate,
+            (0.2...0.4) => :rigid,
+            (..0.2)     => :inflexible
           }.freeze
 
           PROGRESS_LABELS = {
-            (0.8..)      => :mastered,
-            (0.6...0.8)  => :proficient,
-            (0.4...0.6)  => :developing,
-            (0.2...0.4)  => :novice,
-            (..0.2)      => :beginner
+            (0.8..)     => :mastered,
+            (0.6...0.8) => :proficient,
+            (0.4...0.6) => :developing,
+            (0.2...0.4) => :novice,
+            (..0.2)     => :beginner
           }.freeze
 
           module_function

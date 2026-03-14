@@ -32,15 +32,15 @@ module Legion
 
           def to_h
             {
-              id:               @id,
-              from_task_id:     @from_task_id,
-              to_task_id:       @to_task_id,
-              switch_cost:      @switch_cost,
-              accuracy:         @accuracy,
-              costly:           costly?,
-              successful:       successful?,
+              id:                @id,
+              from_task_id:      @from_task_id,
+              to_task_id:        @to_task_id,
+              switch_cost:       @switch_cost,
+              accuracy:          @accuracy,
+              costly:            costly?,
+              successful:        successful?,
               switch_cost_label: switch_cost_label,
-              created_at:       @created_at
+              created_at:        @created_at
             }
           end
         end
